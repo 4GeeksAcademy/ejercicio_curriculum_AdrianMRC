@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #90c4ff62;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-left {
+    flex: 1;
+    max-width: 60%;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-left h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.header-left p {
+    margin: 5px 0;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.contact-info i {
+    margin-left: 10px;
+    color: #333;
+}
+
+.content {
+    display: flex;
+}
+
+.left-column {
+    flex: 2; /* Columna izquierda más pequeña */
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1.5; /* Columna derecha más grande */
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1f78c1;
+    padding-bottom: 5px;
+    color: #1f78c1;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 2px;
+    height: 100%;
+    background-color: #1f78c1;
+}
+
+.timeline li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-date {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #1f78c1;
+}
+
+.timeline-date span {
+    display: block;
+    line-height: 1.4;
+}
+
+.timeline-point {
+    width: 10px;
+    height: 10px;
+    background-color: #1f78c1;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    left: 56px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.timeline-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.timeline-content ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f78c1;
+    color: white;
+    font-size: 14px;
+}
+.skills {
+    margin-bottom: 20px; /* Espacio entre Skills y Work Experience */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Columnas automáticas */
+    gap: 10px; /* Espacio entre los recuadros */
+}
+
+.skill-box {
+    background-color: #1f78c1; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px;
+    font-weight: bold;
+}
+.timeline-date span.separator {
+    margin: 0 5px; /* Espacio alrededor del separador */
+    color: #1f78c1; /* Color del separador */
+    font-weight: bold; /* Negrita */
+}
